@@ -26,6 +26,7 @@ jobs:
         uses: ./
         with:
           github_user_name: platane
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
@@ -65,6 +66,7 @@ jobs:
         uses: ./svg-only
         with:
           github_user_name: platane
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
